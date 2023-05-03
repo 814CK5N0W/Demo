@@ -17,6 +17,7 @@
 		C071F0422A0255330096699E /* snachalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071F0412A0255330096699E /* snachalaTests.swift */; };
 		C071F04C2A0255330096699E /* snachalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071F04B2A0255330096699E /* snachalaUITests.swift */; };
 		C071F04E2A0255330096699E /* snachalaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071F04D2A0255330096699E /* snachalaUITestsLaunchTests.swift */; };
+		C071F05C2A0255540096699E /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = C071F05B2A0255540096699E /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C071F05C2A0255540096699E /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = snachala;
+			packageProductDependencies = (
+				C071F05B2A0255540096699E /* Swinject */,
+			);
 			productName = snachala;
 			productReference = C071F0242A0255330096699E /* snachala.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = C071F01B2A0255330096699E;
+			packageReferences = (
+				C071F05A2A0255540096699E /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = C071F0252A0255330096699E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -606,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C071F05A2A0255540096699E /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C071F05B2A0255540096699E /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C071F05A2A0255540096699E /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C071F0302A0255330096699E /* snachala.xcdatamodeld */ = {
